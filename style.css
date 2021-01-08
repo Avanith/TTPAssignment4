@@ -1,0 +1,12 @@
+html {
+    background-color: black;
+    color: white;
+}
+#buttons {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    border-color: rgb(19, 212, 164);
+    margin: 80% 80% 80% 50%;
+    padding: 5% 5% 5% 5%;
+}
