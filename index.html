@@ -32,18 +32,16 @@
 It should include inputs for a username, email, and password. Also a submit button.-->
     <h2>Form</h2>
         <div id="divForm">
-            <form name="myForm" id="myForm" onsubmit="return validateForm()" method="GET">
+            <form name="myForm" id="myForm" onsubmit="return validatePw()" >
                 <label for="username">Enter your username</label><br>
-                <input type="username" name="username"> <br><br>
-                <label for="email">Enter your Email</label> <br>
+                <input id="UN" type="username" name="username"> <br><br>
+                <label id="EID" for="email">Enter your Email</label> <br>
                 <input type="email" name="email"><br><br>
                 <label for="pw">Enter your password</label><br>
-                <input type="text" name="pw"><br>
+                <input id="passwordID" type="text" name="pw" value=""><br>
             </form>
-            <button type="submit" form="myForm" value="Submit" onsubmit="return validateForm()">Submit</button>
+            <button type="submit" form="myForm" value="Submit">Submit</button>
         </div>
-
-
 
 </body>
 </html>

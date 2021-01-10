@@ -32,14 +32,19 @@ dontHover.addEventListener(
   false
 );
 
-let divForm = document.getElementById("myForm");
 function validatePw() {
-  let x = document.forms["myForm"]["pw"].value;
-  if (x != "12345678") {
-    alert("Password is incorrect");
-    return false;
+  let username = document.getElementById("UN").value;
+  let eid = document.getElementById("EID").value;
+  let pw = document.getElementById("passwordID").value;
+
+  console.log("The username entered is: ", username);
+  console.log("The email is: ", eid);
+  console.log("The password is: ", pw);
+  console.log(typeof pw);
+  if (pw != "12345678") {
+    alert("Incorrect password");
   } else {
-    let h2 = document.getElementsByName("h2");
-    h2.innerText = "Correct PW";
+    let header1 = document.querySelector("h1");
+    header1.innerText = "Password is correct";
   }
 }
