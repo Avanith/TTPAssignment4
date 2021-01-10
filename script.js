@@ -33,6 +33,7 @@ dontHover.addEventListener(
 );
 
 function validatePw() {
+  event.preventDefault();
   let username = document.getElementById("UN").value;
   let eid = document.getElementById("EID").value;
   let pw = document.getElementById("passwordID").value;
