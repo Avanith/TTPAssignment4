@@ -8,13 +8,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--#1-->
+
+    <h1>This is my H1 Tag</h1><br><br>
+
+    <!--Assignment-1-->
+    <h2>Arguing Buttons</h2>
     <div id="buttons">
         <button class="button1" type="button">Button 1</button>
         <p id="btn1"></p>
         <button class="button2" type="button">Button 2</button>
-        <button id="demo" onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
     </div>
+<br><br><br>
+    <!--Assignment-2-->
+    <h2>Don't Hover</h2>
+    <div>
+        <p id="dont-hover">
+            Don't hover over me
+        </p>
+    </div>
+    <br><br><br>
+
+    <!--Assignment-3: Create an HTML page with a form.
+It should include inputs for a username, email, and password. Also a submit button.-->
+    <h2>Form</h2>
+        <div id="divForm">
+            <form name="myForm" id="myForm" onsubmit="return validateForm()" method="GET">
+                <label for="username">Enter your username</label><br>
+                <input type="username" name="username"> <br><br>
+                <label for="email">Enter your Email</label> <br>
+                <input type="email" name="email"><br><br>
+                <label for="pw">Enter your password</label><br>
+                <input type="text" name="pw"><br>
+            </form>
+            <button type="submit" form="myForm" value="Submit" onsubmit="return validateForm()">Submit</button>
+        </div>
+
 
 
 </body>
